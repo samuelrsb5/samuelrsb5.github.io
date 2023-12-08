@@ -1,0 +1,132 @@
+header,
+footer {
+  background-color: #062863;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+}
+
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+  display: block;
+  margin-left: 560px;
+}
+.menu-container {
+  display: flex;
+  background-color: #062863;
+}
+
+.menu-btn, .submenu-btn {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-radius 0.3s ease; 
+  border-radius: 5px;
+  background-color: #4caf50;
+  
+}
+
+.menu-btn:hover, .submenu-btn:hover {
+  background-color: #ddd;
+}
+
+.submenu-btn {
+  display: none;
+}
+
+.menu-open .submenu-btn {
+  display: inline-block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: #8a8888;
+    border-radius: 5px;
+  }
+
+  .game_name{
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  
+  }
+  
+   .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    text-align: center; /* Center the content horizontally */
+  }
+
+  .modal img {
+    width: 100%; /* Set a fixed width of 100% for consistent sizing */
+    height: auto;
+    max-width: 600px; /* Adjust this value based on your preference */
+    max-height: 100%;
+    object-fit: contain;
+    display: inline-block; /* Align the image vertically */
+  }
+
+  .modal button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .video-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+  }
+  

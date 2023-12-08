@@ -1,0 +1,92 @@
+header,
+footer {
+  background-color: #062863;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+}
+
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+  display: block;
+  margin-left: 560px;
+}
+
+.menu-container {
+  display: flex;
+  background-color: #062863;
+}
+
+.menu-btn, .submenu-btn {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-radius 0.3s ease; 
+  
+}
+
+.menu-btn:hover, .submenu-btn:hover {
+  background-color: #ddd;
+}
+
+.submenu-btn {
+  display: none;
+}
+
+.menu-open .submenu-btn {
+  display: inline-block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#mensagemErro{
+  text-align: center;
+}
+

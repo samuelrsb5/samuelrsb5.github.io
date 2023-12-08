@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style/style2.css">
+  <title>Galeria de Imagens</title>
+</head>
+
+<body>
+  <div class="menu-container">
+    <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">Menu</button>
+    <button class="submenu-btn" id="submenuBtn1"><a href="./index2.html">Galeria</a></button>
+    <button class="submenu-btn" id="submenuBtn2"><a href="./index3.html">Cadastre-se</a></button>
+  </div>
+
+  <header>
+    <img src="assets/img/logo-uninassau-removebg-preview.png" alt="" class="logo">
+    <h1>Estudantes de Análise e Desenvolvimento de Sistemas</h1>
+  </header>
+
+  <p id="mensagem">Clique no botão para exibir o trailer do jogo</p>
+  <button id="botao" onclick="videoGTA()">GTA VI</button>
+  <button id="botao" onclick="videoSF()">Starfield</button>
+  <button id="botao" onclick="videoRDR()">Red Dead Rendemption</button>
+  <button id="botao" onclick="videoGOW()">God of War Ragnarok</button>
+  <button id="botao" onclick="video2077()">Cyberpunk 2077</button>
+  <button id="botao" onclick="videoRE4()">Resident Evil 4</button>
+
+  <div class="gallery">
+    <div class="card" onclick="showContent('assets/img/gta6.png')">
+      <img src="assets/img/gta6.png" alt="Imagem 1">
+      <h3 class="game_name">GTA VI</h3>
+      <p class="game_desc">Após 10 anos de espera, os fãs de GTA se animam com a notícia do lançamento de GTA VI,
+        previsto para ser lançado 2025.</p>
+    </div>
+
+    <div class="card" onclick="showContent('assets/img/starfield.png')">
+      <img src="assets/img/starfield.png" alt="Imagem 2">
+      <h3 class="game_name">Starfield</h3>
+      <p class="game_desc">O jogo de mundo aberto focado em viagens espaciais Starfield foi um dos grandes destaques do
+        mundo dos games dos últimos anos.</p>
+    </div>
+
+    <div class="card" onclick="showContent('assets/img/rdr2.png')">
+      <img src="assets/img/rdr2.png" alt="Imagem 3">
+      <h3 class="game_name">Red Dead Rendemption 2</h3>
+      <p class="game_desc">Outra franquia de grande sucesso da RockStar, Red Dead Rendemption 2 causou grande impacto no
+        seu lançamento, trazendo de volta uma franquia antiga.</p>
+    </div>
+
+    <div class="card" onclick="showContent('assets/img/ragnarok.png')">
+      <img src="assets/img/ragnarok.png" alt="Imagem 4">
+      <h3 class="game_name">God of War Ragnarok</h3>
+      <p class="game_desc">Sucessor do jogo do ano de 2018, God of War Ragnarok foi um dos games mais esperados depois
+        do lançamento de God of War 4, com um final que deixou indícios de uma continuação melhor ainda.</p>
+    </div>
+
+    <div class="card" onclick="showContent('assets/img/cyberpnk.png')">
+      <img src="assets/img/cyberpnk.png" alt="Imagem 5">
+      <h3 class="game_name">Cyberpunk 2077</h3>
+      <p class="game_desc">Da CD Projekt red, mesmos produtores da saga The Witcher, Cyberpunk 2077 garantiu muito hype
+        no seu lançamento, porém o jogo pareceu ser lançado incompleto, com muitos bugs e falhas fazendo com que a
+        popularidade do jogo caísse drasticamente.</p>
+    </div>
+
+    <div class="card" onclick="showContent('assets/img/r4rmk.png')">
+      <img src="assets/img/r4rmk.png" alt="Imagem 6">
+      <h3 class="game_name">Resident Evil 4</h3>
+      <p class="game_desc">Remaster do mais antigo sucesso da Capcom, RE4 com sua nova versão marcou um sentimento
+        nostálgico em todos os seus fãs. </p>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="modalContent"></div>
+  </div>
+
+  <footer>
+    <p>
+      &copy; 2023 Estudantes de Análise e Desenvolvimento de Sistema. Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/menuRetratil.js"></script>
+  <script src="assets/js/videoGTA.js"></script>
+  <script src="assets/js/videoSF.js"></script>
+  <script src="assets/js/videoRDR.js"></script>
+  <script src="assets/js/videoGOW.js"></script>
+  <script src="assets/js/video2077.js"></script>
+  <script src="assets/js/videoRE4.js"></script>
+
+</body>
+
+</html>
